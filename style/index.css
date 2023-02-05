@@ -1,0 +1,99 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+#photo {
+  display: flex;
+  justify-content: space-between;
+}
+.design {
+  height: 460px;
+  border-radius: 10px;
+  background-color: rgb(240, 129, 50);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+}
+img:hover {
+  transform: scale(1.2);
+}
+.divContent {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: rgba(72, 39, 39, 0.301);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  width: 100%;
+  height: 100vh;
+  /* background: rgba(255, 255, 255, 0.819); */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+#app {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  background-color: black;
+  padding: 12px;
+}
+
+#clickOut {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 24px 0;
+  padding: 12px 24px;
+  color: brown;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.divContent p {
+  color: #fff;
+  font-size: 24px;
+  margin: 12px 0;
+  text-align: center;
+}
+
+img {
+  object-fit: cover;
+}
+
+h2 {
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(3, 3, 23, 0.768);
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  #app {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  #app {
+    grid-template-columns: 1fr;
+  }
+}
