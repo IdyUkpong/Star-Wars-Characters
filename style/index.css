@@ -1,6 +1,13 @@
 *,
-body,
 html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../Images/starbg.jpeg");
+  background-size: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,16 +24,17 @@ html {
 }
 .design {
   height: 460px;
-  border-radius: 10px;
-  background-color: rgb(240, 129, 50);
+  background-image: url("../Images/star-wars.jpg");
   display: flex;
   align-items: center;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 18px;
 }
 img:hover {
   transform: scale(1.2);
+  border-style: outset;
 }
+
 .divContent {
   width: 400px;
   height: 400px;
@@ -55,7 +63,8 @@ img:hover {
   width: 100%;
   height: auto;
   align-items: center;
-  background-color: black;
+  background-image: url("../Images/starbg.jpeg");
+  background-size: cover;
   padding: 12px;
 }
 
@@ -83,7 +92,7 @@ img {
 h2 {
   font-weight: 700;
   background-color: rgba(255, 255, 255, 0);
-  color: rgba(3, 3, 23, 0.768);
+  color: rgba(134, 145, 111, 0.768);
   text-align: center;
 }
 
